@@ -1,0 +1,244 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="py-1">
+        <h2>Release Details</h2>
+        <p class="lead">Instructions</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 order-md-1">
+            <form id="project-form" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-9 mb-3">
+                        <label>Complier_Name</label>
+                        <input type="text" class="form-control" tag="name" required>
+                        <div class="invalid-feedback">
+                            Valid complier name is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9 mb-3">
+                        <label>RELEASE_TYPE</label>
+						<br>
+	
+                        <!--<input type="text" class="form-control" tag="customer" required>-->
+						<label class="radio-inline"><input type="radio" style="margin:5px;"  name="optradio1" checked tag="customer" >Manditory</label>
+						<label class="radio-inline"><input type="radio" style="margin:5px;" name="optradio1" tag="customer">Temporary</label>
+                        <div class="invalid-feedback">
+                            Valid Customer is required.
+                        </div>
+						<br>
+						<label>Star's Details *(If Mandatory )</label>
+						<input type="text" class="form-control" tag="customer" required>
+                    </div>
+                
+                   
+                    <div class="col-md-6 mb-3">
+					 <label>Release Date</label>
+                    <input type="date" class="form-control" tag="startDate" required>
+					<div class="invalid-feedback">
+                      Start date is required
+                     </div>
+                    </div>
+                </div>    
+        
+
+              <!--  <hr class="mb-4">
+                <h4 class="mb-3">SECTION III - Summary of Changes in this Release</h4>
+                <div class="row col">
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-java">
+                        <label class="custom-control-label" for="tech-java">Java</label>
+                    </div>
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-spring">
+                        <label class="custom-control-label" for="tech-spring">Spring Boot</label>
+                    </div>
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-jpa">
+                        <label class="custom-control-label" for="tech-jpa">JPA</label>
+                    </div>
+                </div>
+                <div class="row col">
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-hibernate">
+                        <label class="custom-control-label" for="tech-hibernate">Hibernate</label>
+                    </div>
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-unix">
+                        <label class="custom-control-label" for="tech-unix">Unix</label>
+                    </div>
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-rest">
+                        <label class="custom-control-label" for="tech-rest">ReST</label>
+                    </div>
+                </div>
+                <div class="row col">
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-python">
+                        <label class="custom-control-label" for="tech-python">Python</label>
+                    </div>
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-perl">
+                        <label class="custom-control-label" for="tech-perl">Perl</label>
+                    </div>
+                    <div class="custom-control custom-checkbox col">
+                        <input type="checkbox" class="custom-control-input" tag="technology" id="tech-junit">
+                        <label class="custom-control-label" for="tech-junit">jUnit</label>
+                    </div>
+                </div> -->
+				 <hr class="mb-4">
+                <h4 class="mb-3">SECTION II - Verification/Known Issues</h4>
+                
+                <div class="row">
+                    <div class="col-md-9 mb-3">
+                        <label> Wide metal slotting support:</label>
+                    </div>
+                    <div class="col-md-9 mb-3">
+                        <!--<input type="text" class="form-control" tag="job-stage" id="js4">-->
+						<label class="radio-inline"><input type="radio" style="margin:5px;"  name="optradio2" checked tag="customer" >Yes</label>
+						<label class="radio-inline"><input type="radio" style="margin:5px;" name="optradio2" tag="customer">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-md-9 mb-3">
+                        <label>Hierarchical LVS support</label>
+                    </div>
+                    <div class="col-md-9 mb-3">
+                        <!--<input type="text" class="form-control" tag="job-stage" id="js5">-->
+						<label class="radio-inline"><input type="radio" style="margin:5px;"  name="optradio3" checked tag="customer" >Yes</label>
+						<label class="radio-inline"><input type="radio" style="margin:5px;" name="optradio3" tag="customer">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 mb-3">
+                        <label>List of inconsistencies between names of diodes and LVS deck</label>
+                    </div>
+                    <div class="col-md-9 mb-3">
+                       <!-- <input type="text" class="form-control" tag="job-stage" id="js6">-->
+                       <label class="radio-inline"><input type="radio" style="margin:5px;"  name="optradio4" checked tag="customer" >Yes</label>
+                       <label class="radio-inline"><input type="radio" style="margin:5px;" name="optradio4" tag="customer">No</label>
+                    </div>
+                </div>
+                
+                <hr class="mb-4">
+                <h4 class="mb-3">SECTION III - Summary of Changes in this Release</h4>
+                
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label>LEF_CHANGES :</label>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <input type="text" class="form-control" tag="job-stage" id="js4">
+                    </div>
+                </div>
+                
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" >Add</button>
+
+            </form>
+        </div>
+    </div>
+
+    <br><br>
+</div>
+
+
+<script>
+    // $( document ).ready()
+	function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+    $(function() {
+        $('#project-form').submit(function(){
+            event.preventDefault();
+            var form = $(this)[0];
+            if (form.checkValidity() === false) {
+                event.stopPropagation();
+                return;
+            }
+            //form is valid
+            form.classList.add('was-validated');
+
+            var project = {};
+            var selectedTech = [];
+            var jsReq = [];
+
+            var allTech = $("input:checkbox[tag=technology]");
+            for(var index = 0; index < allTech.length; ++index) {
+                var tech = allTech[index];
+                if($(tech).is(':checked') === true) {
+                    var techLabel = $('label[for="' + $(tech).attr('id')+'"]').html();
+                    selectedTech.push(techLabel);
+                }
+            }
+
+            project['name'] = $("input[tag=name]").val();
+            project['customer'] = $("input[tag=customer]").val();
+            project['startDate'] = $("input[tag=startDate]").val();
+            project['endDate'] = $("input[tag=endDate]").val();
+            project['techRequired'] = selectedTech;
+
+            var js4 = $("input#js4").val();
+            var js5 = $("input#js5").val();
+            var js6 = $("input#js6").val();
+            var js7 = $("input#js7").val();
+
+            if(js4 == "") {
+                jsReq.push({"jobStage": "4", "count": "0"});
+            }
+            else {
+                jsReq.push({"jobStage": "4", "count": js4});
+            }
+
+            if(js5 == "") {
+                jsReq.push({"jobStage": "5", "count": "0"});
+            }
+            else {
+                jsReq.push({"jobStage": "5", "count": js5});
+            }
+
+            if(js6 == "") {
+                jsReq.push({"jobStage": "6", "count": "0"});
+            }
+            else {
+                jsReq.push({"jobStage": "6", "count": js6});
+            }
+
+            if(js7 == "") {
+                jsReq.push({"jobStage": "7", "count": "0"});
+            }
+            else {
+                jsReq.push({"jobStage": "7", "count": js7});
+            }
+
+            console.log(jsReq);
+
+            project['jobStageRequired'] = jsReq;
+            // console.log(project);
+
+            $.ajax({
+                type: 'POST',
+                url: '/add/project',
+                contentType: 'application/json',
+                data: JSON.stringify(project),
+                success: function(data, status){
+                    // redirect must be defined and must be true
+                    // console.log(data);
+                    if (data.redirect !== undefined && data.redirect) {
+                        window.location.href = data.redirect_url;
+                        // window.location.replace(data.redirect_url);
+                    }
+                },
+                error: function(error){
+				    console.log(error);
+			    }
+            });
+        });
+    });
+</script>
+{% endblock %}
